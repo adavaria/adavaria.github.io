@@ -1,21 +1,21 @@
 ---
 layout: page
-title: About me
-subtitle: AAhhh its AI in news again!
+title: About Me
+subtitle: AI Engineer and Researcher
 ---
 
-Hey everyone glad seeing you landing to this page. Blessed to be in the era of great deep learning community of developers and researchers who gives us wing to apply their novel ideas to solve the business problems we work on. I enjoy reading AI literatures (such as openreview.net, arxiv) and implementing them to solve industrial problems at hand. Been worked at various capacity for following:
+Hello! I'm Ali Davariashtiyani, a machine learning engineer and researcher specializing in materials science. I'm thrilled to be part of the AI community during this era of rapid progress in deep learning. 
 
-- Automotive Navigation
-- Intelligent context determination
-- Natural Language Processing
-- AI in finance
+I have a PhD in Materials Engineering from the University of Illinois Chicago. My dissertation focused on using machine learning and deep learning to predict synthesizability and formation energy of novel materials. I enjoy staying up-to-date on the latest AI research by reading papers on ArXiv and OpenReview.
 
-What else do you need?
+Professionally, I have experience applying deep learning techniques to materials science problems, including:
 
-### Something I struggle with in new domain
+- Representing crystal structures as 3D voxel images for input to convolutional neural networks
+- Developing models to predict whether a given crystal structure can be synthesized
+- Estimating formation energies of crystals to aid in materials discovery
 
-Understanding data to understand business better and vice-a-versa and most importantly building pipeline to integrate data of various kind for training deep learning models. Rest is history; that comes with experience.
+I have also worked on high performance computing systems and am comfortable with tools like Docker, Kubernetes, Slurm, and HTCondor.
 
-### How you can buy me
-If something you can buy me over, is over a cup of coffee and your inquisitiveness to put AI to innovate
+Outside of materials science, I have worked on deep learning projects in natural language processing, finance, and automotive navigation. I enjoy implementing cutting-edge algorithms to solve real-world problems.
+
+Overall, I am passionate about leveraging AI advancements to push the boundaries of what's possible. I look forward to contributing to the field throughout my career.
