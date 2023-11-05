@@ -4,7 +4,9 @@ WORKDIR /srv/jekyll
 COPY Gemfile .
 
 RUN gem install bundler
-RUN bundle install --clean --quiet
+# RUN bundle install --clean --quiet
+# RUN bundle config set --local clean 'true'
+RUN bundle install --quiet
 
 EXPOSE 4000
 

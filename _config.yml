@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Ali Davari
+title: Deepak Bhatt
 
 # Short description of your site
-description: Materials and Data Scientist
+description: Making AI easy
 
 # --- Navigation bar options --- #
 
@@ -64,7 +64,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Ali Davari
+  name: Deepak Bhatt
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -72,13 +72,13 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "a.davari871@gmail.com"
-  # facebook: deepak
-  github: adavaria
-  # twitter: deepak
+  email: "deep_83bhatt@yahoo.co.in"
+  facebook: deepak
+  github: deepak
+  twitter: deepak
 #  reddit: yourname
 #  google-plus: +DeanAttali
- linkedin: ali-davari
+#  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -92,14 +92,14 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  # twitter: true
-  # facebook: true
-  # google: false
+  twitter: true
+  facebook: true
+  google: false
   linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "adavaria.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -136,7 +136,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Chicago"
+timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
