@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ali Davari, Ph.D. | Data Scientist</title>
+  <meta name="description" content="Ali Davari, Ph.D. — Staff Data Scientist at the University of Chicago, applying machine learning to computational biology and materials science.">
+  <meta name="author" content="Ali Davari">
+
+  <!-- Social previews (LinkedIn, Slack, etc.). Set og:image to a photo once you add one. -->
+  <meta property="og:title" content="Ali Davari, Ph.D.">
+  <meta property="og:description" content="Staff Data Scientist at UChicago · Machine learning for computational biology and materials science.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top">Ali Davari</a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav class="nav__links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#more">More</a>
+      <!-- <a href="#hobbies">Hobbies</a> -->
+      <a href="assets/cv/CV_Ali_Davari.pdf" target="_blank" rel="noopener">CV</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================== HERO / ABOUT ============================== -->
+<section class="hero" id="about">
+  <div class="container hero__grid">
+    <div class="hero__photo">
+      <!-- To use a photo: put it at assets/img/profile.jpg and replace the div below with
+           <img src="assets/img/profile.jpg" alt="Ali Davari"> -->
+      <div class="avatar-placeholder" aria-hidden="true">AD</div>
+    </div>
+
+    <div class="hero__text">
+      <h1>Ali Davari, Ph.D.</h1>
+      <p class="hero__role">Staff Data Scientist · University of Chicago</p>
+      <p class="hero__sub">Collaborator, Chan Zuckerberg Biohub Chicago · Chicago, IL</p>
+
+      <p>
+        I apply <strong>machine learning</strong> to <strong>computational biology</strong> and
+        <strong>materials science</strong>. I build AI workflows that combine deep learning
+        (generative diffusion, graph neural networks, protein language models) with
+        physics-based simulation (DFT, MD).
+      </p>
+      <p>
+        My recent work includes benchmarking protein structure prediction models
+        (AlphaFold2/3, Boltz, Protenix) on TCR-pMHC complexes, curating immunology
+        sequence data for the <strong>DecoderTCR</strong> protein language model (ICML 2026),
+        and generative models for drug discovery. For my Ph.D. at the University of Illinois Chicago,
+        I built deep learning models that predict the formation energy and synthesizability
+        of crystalline materials.
+      </p>
+
+      <div class="links">
+        <a class="btn" href="mailto:alidavariashtiyani@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=4_t-DZYAAAAJ&hl=en" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Scholar</a>
+        <a class="btn" href="https://github.com/adavaria" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/davari-ali" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a class="btn btn--primary" href="assets/cv/CV_Ali_Davari.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> CV (PDF)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <ul class="interests">
+      <li>Protein structure prediction</li>
+      <li>Protein language models</li>
+      <li>Immunology (TCR-pMHC)</li>
+      <li>Generative AI for drug discovery</li>
+      <li>ML for materials discovery</li>
+      <li>DFT &amp; molecular dynamics</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== EXPERIENCE ============================== -->
+<section class="section" id="experience">
+  <div class="container">
+    <h2>Experience</h2>
+
+    <article class="entry">
+      <div class="entry__head">
+        <div>
+          <h3>University of Chicago</h3>
+          <p class="entry__meta">Collaborator, Chan Zuckerberg Biohub Chicago</p>
+        </div>
+      </div>
+      <ul class="roles">
+        <li><span>Staff Data Scientist</span><span class="date">Oct 2025 – Present</span></li>
+        <li><span>Research Scientist</span><span class="date">Jul 2024 – Oct 2025</span></li>
+      </ul>
+      <ul class="bullets">
+        <li><strong>TCRkit &amp; TCR-pMHC sequence catalog.</strong> Built TCRkit for full-length TCR and peptide-MHC sequence reconstruction, metrics, and QC. Used it to curate a full catalog of TCR-pMHC complex sequences for structure distillation and protein language model training.</li>
+        <li><strong>DecoderTCR (<a href="https://icml.cc/virtual/2026/poster/60562" target="_blank" rel="noopener">ICML 2026</a>).</strong> Curated training data for successive versions of a masked protein language model for TCR-pMHC recognition and benchmarked each version (0.96 AUROC zero-shot pMHC binding; 0.76 AUROC epitope-specific TCR).</li>
+        <li><strong>Protein structure prediction benchmarking toolkit (NeurIPS 2026 Workshop).</strong> Built a toolkit that benchmarks deep learning models on TCR-pMHC complex prediction and used it to evaluate 87 complexes released after the AlphaFold3 training cutoff.
+          <ul>
+            <li>Designed <em>PDBFrame</em>, a pandas-based Python object for efficient protein structure management and manipulation.</li>
+            <li>Automated chain type detection, gene/allele identification, and residue matching with missing-residue handling.</li>
+            <li>Benchmarked AlphaFold2/3, Boltz-1/2, TCRmodel2, Protenix, and ESMFold2 on RMSD, DockQ, LDDT, and docking angles.</li>
+          </ul>
+        </li>
+        <li><strong>Generative AI for drug discovery (HyDiF, NeurIPS 2025 Workshop).</strong> Contributed to a diffusion-guided hypernetwork that models small molecules as continuous neural fields, for conformer generation, inpainting for lead optimization, and property prediction.</li>
+        <li><strong>Mentorship.</strong> Managed and mentored interns on interdisciplinary computational biology projects at CZ Biohub.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry__head">
+        <div>
+          <h3>University of Illinois Chicago</h3>
+          <p class="entry__meta">Computational Materials Research Lab (CMRL)</p>
+        </div>
+      </div>
+      <ul class="roles">
+        <li><span>Research / Teaching Assistant</span><span class="date">Aug 2017 – Dec 2023</span></li>
+      </ul>
+      <ul class="bullets">
+        <li><strong>ML models for materials prediction.</strong> Improved the accuracy of 3D image-based deep learning models more than 7-fold (MAE 46 meV/atom). The result is the most accurate image-based model for the formation energy of crystalline materials.</li>
+        <li><strong>Python toolkit for materials analysis.</strong> Developed and released a toolkit that uses 3D CNNs to analyze sparse point clouds and voxel images of crystals. Introduced a new model for the synthesizability of theoretical materials and applied it to battery electrode and thermoelectric materials (<a href="https://github.com/kadkhodaei-research-group/XIE-SPP" target="_blank" rel="noopener">GitHub</a>).</li>
+        <li><strong>Ab initio simulations (VASP).</strong> Studied how anharmonic phonons affect diffusion in bcc metals, using temperature-dependent DFT and transition state theory. The simulated diffusion matched experimental data.</li>
+        <li><strong>Climate statistics.</strong> Ran time-series and generalized extreme value (GEV) analyses of high-temperature extremes. Found that extreme-heat events double in frequency every 20 years and projected that they will occur yearly by 2100.</li>
+        <li><strong>High-performance computing.</strong> Assembled a Condor HPC cluster from a dozen decommissioned nodes, which saved the lab a $20k HPC purchase.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============================== PUBLICATIONS ============================== -->
+<section class="section section--alt" id="publications">
+  <div class="container">
+    <h2>Selected Publications</h2>
+    <p class="section__note">Full list on <a href="https://scholar.google.com/citations?user=4_t-DZYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>. Published as <em>A. Davariashtiyani</em>.</p>
+
+    <ol class="pubs" reversed>
+      <li class="pub">
+        <p class="pub__title">Benchmarking TCR-pMHC Recognition Geometry</p>
+        <p class="pub__authors">Hippe, K., Zhu, S., <b>Davariashtiyani, A.</b>, Lai, B., Ouyang-Zhang, J., Perera, J., Khan, A.A.</p>
+        <p class="pub__venue"><em>NeurIPS 2026 Workshop AI4DD</em> (to appear) · 2026</p>
+      </li>
+      <li class="pub">
+        <p class="pub__title">DecoderTCR: Compositional Pretraining and Entropy-Guided Decoding for TCR-pMHC Interactions</p>
+        <p class="pub__authors">Lai, B., Englund, M., Bharanikumar, R., Nocedal, I., <b>Davariashtiyani, A.</b>, Perera, J., Khan, A.A.</p>
+        <p class="pub__venue"><em>ICML 2026</em> · 2026</p>
+        <p class="pub__links"><a href="https://icml.cc/virtual/2026/poster/60562" target="_blank" rel="noopener">ICML</a><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12889700/" target="_blank" rel="noopener">PMC</a></p>
+      </li>
+      <li class="pub">
+        <p class="pub__title">HyperDiffusionFields (HyDiF): Diffusion-Guided Hypernetworks for Learning Implicit Molecular Neural Fields</p>
+        <p class="pub__authors">Babu, S., Lo, P., Zhang, X., Srivastava, A., <b>Davariashtiyani, A.</b>, Perera, J., Maire, M., Khan, A.A.</p>
+        <p class="pub__venue"><em>NeurIPS Workshop on AI Virtual Cells and Instruments</em> · 2025</p>
+        <p class="pub__links"><a href="https://openreview.net/forum?id=enNmzlhi3P" target="_blank" rel="noopener">OpenReview</a></p>
+      </li>
+      <li class="pub">
+        <p class="pub__title">Voxel Image of Crystals for High-Throughput Materials Screening: Formation Energy Prediction by a Deep CNN</p>
+        <p class="pub__authors"><b>Davariashtiyani, A.</b>, Kadkhodaei, S.</p>
+        <p class="pub__venue"><em>Communications Materials</em> (Nature Portfolio) · 2023</p>
+        <p class="pub__links"><a href="https://www.nature.com/articles/s43246-023-00433-9" target="_blank" rel="noopener">Paper</a></p>
+      </li>
+      <li class="pub">
+        <p class="pub__title">Exponential increases in high-temperature extremes in North America</p>
+        <p class="pub__authors"><b>Davariashtiyani, A.</b>, Taherkhani, M., Fattahpour, S., Vitousek, S.</p>
+        <p class="pub__venue"><em>Scientific Reports</em> (Nature Portfolio) · 2023</p>
+        <p class="pub__links"><a href="https://doi.org/10.1038/s41598-023-41347-3" target="_blank" rel="noopener">Paper</a></p>
+      </li>
+      <li class="pub">
+        <p class="pub__title">Understanding the role of anharmonic phonons in diffusion of bcc metals</p>
+        <p class="pub__authors">Fattahpour, S., <b>Davariashtiyani, A.</b>, Kadkhodaei, S.</p>
+        <p class="pub__venue"><em>Physical Review Materials</em> · 2022</p>
+        <p class="pub__links"><a href="https://doi.org/10.1103/PhysRevMaterials.6.023803" target="_blank" rel="noopener">Paper</a></p>
+      </li>
+      <li class="pub">
+        <p class="pub__title">Predicting synthesizability of crystalline materials via deep learning</p>
+        <p class="pub__authors"><b>Davariashtiyani, A.</b>, Kadkhodaie, Z., Kadkhodaei, S.</p>
+        <p class="pub__venue"><em>Communications Materials</em> (Nature Portfolio) · 2021</p>
+        <p class="pub__links"><a href="https://www.nature.com/articles/s43246-021-00219-x" target="_blank" rel="noopener">Paper</a><a href="https://github.com/kadkhodaei-research-group/XIE-SPP" target="_blank" rel="noopener">Code</a></p>
+      </li>
+      <li class="pub">
+        <p class="pub__title">Phonon-assisted diffusion in bcc phase of titanium and zirconium from first principles</p>
+        <p class="pub__authors">Kadkhodaei, S., <b>Davariashtiyani, A.</b></p>
+        <p class="pub__venue"><em>Physical Review Materials</em> · 2020</p>
+        <p class="pub__links"><a href="https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.4.043802" target="_blank" rel="noopener">Paper</a></p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================== SKILLS ============================== -->
+<section class="section" id="skills">
+  <div class="container">
+    <h2>Expertise</h2>
+    <div class="cards">
+      <div class="card">
+        <h3><i class="fa-solid fa-brain"></i> Machine Learning</h3>
+        <p>PyTorch, TensorFlow, scikit-learn. Generative diffusion, CNN, ResNet, GNN, U-Net, autoencoders, hypernetworks.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-dna"></i> Protein Structure &amp; Sequence</h3>
+        <p>AlphaFold 2/3, Boltz, ESMFold, RDKit, Schrödinger. TCR-pMHC structure prediction, benchmarking, and modeling.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-atom"></i> MD &amp; DFT</h3>
+        <p>LAMMPS, KMC, VASP, Gaussian, CALPHAD, ASE, pymatgen.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-cube"></i> Computer Vision</h3>
+        <p>3D image processing; computer vision for materials discovery.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-code"></i> Programming</h3>
+        <p>Python, C++, MATLAB, Java, Fortran, SQL, Bash, AWK.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-server"></i> Infrastructure &amp; HPC</h3>
+        <p>Git, Docker, Kubernetes, AWS, Google Cloud. Parallel CPU/GPU programming and algorithm optimization for HPC.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== EDUCATION ============================== -->
+<section class="section section--alt" id="education">
+  <div class="container">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline__item">
+        <span class="date">2017 – 2023</span>
+        <h3>Ph.D., Materials Engineering</h3>
+        <p>University of Illinois Chicago · Chicago, IL</p>
+        <p class="muted">Dissertation: Deep Learning for Predicting the Formation Energy and Synthesizability of Crystalline Materials</p>
+      </div>
+      <div class="timeline__item">
+        <span class="date">2015 – 2017</span>
+        <h3>M.Sc., Chemical Engineering <span class="muted">· Minor in Computer Science</span></h3>
+        <p>Drexel University · Philadelphia, PA</p>
+      </div>
+      <div class="timeline__item">
+        <span class="date">2010 – 2015</span>
+        <h3>B.Sc., Chemical Engineering</h3>
+        <p>University of Tehran · Tehran, Iran</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== TALKS / HONORS / TEACHING ============================== -->
+<section class="section" id="more">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <h2>Talks</h2>
+        <ul class="plain">
+          <li>
+            <strong>A Deep Learning Model for Formation Energy and Synthesizability of Crystalline Materials</strong>
+            <span class="muted sub">Oral · MRS Fall Meeting 2022, Boston, MA</span>
+          </li>
+          <li>
+            <strong>Crystal Synthesis Prediction Using Deep Learning</strong>
+            <span class="muted sub">Oral · IMAT 2021, St. Louis, MO</span>
+          </li>
+        </ul>
+
+        <h2>Honors &amp; Activities</h2>
+        <ul class="plain">
+          <li>2nd place, Christopher Burke and Susan S. Burke Civil Engineering Poster Competition, UIC <span class="muted">· 2021</span></li>
+          <li>Selected for the NSF-funded ICME Summer School (Integrated Computational Materials Education), University of Michigan <span class="muted">· 2019</span></li>
+          <li>Member, Materials Research Society (MRS) <span class="muted">· 2020 – 2023</span></li>
+          <li>Treasurer, Persian Student Association, Drexel University <span class="muted">· 2017</span></li>
+          <li>Top ranks, Sharif Computer-aided Chemical Engineering Contest (SC3) <span class="muted">· 2015</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Teaching</h2>
+        <ul class="plain">
+          <li>
+            <strong>University of Illinois Chicago</strong> <span class="muted">· 2017 – 2021</span><br>
+            Properties of Materials, Materials for Manufacturing, Fluid Mechanics &amp; Hydraulics,
+            Water Resources Engineering, Introduction to Thermodynamics, Computational Methods in
+            Chemical Engineering
+          </li>
+          <li>
+            <strong>Drexel University</strong> <span class="muted">· 2018</span><br>
+            Bioreactors and Bioprocess Principles
+          </li>
+          <li>
+            <strong>University of Tehran</strong> <span class="muted">· 2013 – 2015</span><br>
+            C++ Programming, Math Applications in Petroleum Engineering
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== HOBBIES (uncomment to enable) ==============================
+     1. Put photos in assets/img/hobbies/
+     2. Uncomment this section and the "Hobbies" link in the nav above.
+<section class="section section--alt" id="hobbies">
+  <div class="container">
+    <h2>Beyond Work</h2>
+    <p>A few words about what you enjoy outside of research.</p>
+    <div class="gallery">
+      <figure>
+        <img src="assets/img/hobbies/example1.jpg" alt="Description" loading="lazy">
+        <figcaption>Caption</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/hobbies/example2.jpg" alt="Description" loading="lazy">
+        <figcaption>Caption</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+-->
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__links">
+      <a href="mailto:alidavariashtiyani@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://scholar.google.com/citations?user=4_t-DZYAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      <a href="https://github.com/adavaria" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/davari-ali" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p>&copy; <span id="year">2026</span> Ali Davari</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
