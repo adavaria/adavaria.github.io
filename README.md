@@ -9,7 +9,6 @@ index.html             all page content (one section per CV block)
 assets/css/style.css   styling, light/dark theme, mobile layout
 assets/js/main.js      mobile menu, theme toggle, active nav link
 assets/img/            favicon, profile photo, hobby photos
-assets/cv/             downloadable CV PDF
 .nojekyll              tells GitHub Pages to serve files as-is
 ```
 
@@ -20,10 +19,11 @@ python3 -m http.server 8000
 ```
 
 ## Common edits
-- **Update the CV PDF:** copy the new PDF over `assets/cv/CV_Ali_Davari.pdf` (source: the `CV-general` project, `final/CV_Ali_Davari.pdf`).
-- **Add a profile photo:** save a square image as `assets/img/profile.jpg`. In `index.html`, replace `<div class="avatar-placeholder" ...>AD</div>` with `<img src="assets/img/profile.jpg" alt="Ali Davari">`.
+- **Content source:** the page mirrors the LaTeX CV in the `CV-general` project. Update both when the CV changes.
+- **Change the profile photo:** replace `assets/img/profile.jpg`. It is cropped to a circle; adjust `object-position` on `.hero__photo img` in `style.css` if the face isn't centered.
 - **Add hobbies or a photo gallery:** put images in `assets/img/hobbies/`, then uncomment the `HOBBIES` section and the `Hobbies` nav link in `index.html`.
 - **Add a publication:** copy one `<li class="pub">` block in the Publications section.
+- **Add a presentation:** copy one `<div class="timeline__item">` block in the Presentations section.
 - **Change the accent color:** edit `--accent` in `assets/css/style.css`.
 
 ## Deploy (first time)

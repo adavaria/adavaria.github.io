@@ -151,6 +151,7 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow);
   border: 4px solid var(--card);
 }
+.hero__photo img { object-position: 50% 42%; }  /* keep the face centered in the circle */
 .avatar-placeholder {
   display: flex; align-items: center; justify-content: center;
   background: linear-gradient(135deg, var(--accent), #b23a3a);
@@ -271,8 +272,10 @@ img { max-width: 100%; display: block; }
   content: "";
   position: absolute; left: calc(-1.5rem - 7px); top: 0.35rem;
   width: 12px; height: 12px; border-radius: 50%;
-  background: var(--accent); border: 2px solid var(--bg-alt);
+  background: var(--accent); border: 2px solid var(--bg);
 }
+.section--alt .timeline__item::before { border-color: var(--bg-alt); }
+.timeline__item .date { display: block; }
 .timeline__item h3 { margin-top: 0.1rem; }
 .timeline__item p { margin: 0.1rem 0 0; }
 
@@ -282,6 +285,14 @@ img { max-width: 100%; display: block; }
 .plain { list-style: none; padding: 0; margin: 0; }
 .plain li { margin-bottom: 1rem; }
 .plain .sub { display: block; font-size: 0.92rem; }
+
+/* Coursework tags */
+.tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.tags li {
+  border: 1px solid var(--border); background: var(--card);
+  padding: 0.25rem 0.7rem; border-radius: 999px;
+  font-size: 0.84rem; color: var(--muted);
+}
 
 @media (max-width: 760px) {
   .two-col { grid-template-columns: 1fr; gap: 0; }
