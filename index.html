@@ -42,9 +42,10 @@
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#publications">Publications</a>
       <a href="#presentations">Presentations</a>
-      <a href="#skills">Skills</a>
       <a href="#more">More</a>
       <!-- <a href="#hobbies">Hobbies</a> -->
       <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
@@ -119,9 +120,9 @@
         <li><span>Research Scientist</span><span class="date">Jul 2024 – Oct 2025</span></li>
       </ul>
       <ul class="bullets">
-        <li><strong>TCRkit &amp; TCR-pMHC sequence catalog.</strong> Built TCRkit for full-length TCR and peptide-MHC sequence reconstruction, metrics, and QC. Used it to curate and integrate bound and unbound TCR, peptide, and MHC sequences into a full catalog of TCR-pMHC complexes for structure distillation and protein language model training.</li>
+        <li><strong>TCRkit &amp; TCR-pMHC sequence catalog.</strong> Built <a href="https://github.com/akdslab/tcrkit" target="_blank" rel="noopener">TCRkit</a> for full-length TCR and peptide-MHC sequence reconstruction, metrics, and QC. Used it to curate and integrate bound and unbound TCR, peptide, and MHC sequences into a full catalog of TCR-pMHC complexes for structure distillation and protein language model training.</li>
         <li><strong><a href="https://virtualcellmodels.cziscience.com/model/decoder-tcr" target="_blank" rel="noopener">DecoderTCR</a> (<a href="https://icml.cc/virtual/2026/poster/60562" target="_blank" rel="noopener">ICML 2026</a>).</strong> In collaboration with CZ Biohub Chicago, curated training data for successive versions of a masked protein language model for TCR-pMHC recognition and benchmarked each version (0.96 AUROC zero-shot pMHC binding; 0.76 AUROC epitope-specific TCR).</li>
-        <li><strong>Protein structure prediction benchmarking toolkit (NeurIPS 2026 Workshop).</strong> Built a toolkit that benchmarks deep learning models on TCR-pMHC complex prediction and used it to evaluate 87 complexes released after the AlphaFold3 training cutoff.
+        <li><strong>Protein structure prediction benchmarking toolkit (<a href="https://neurips.cc/virtual/2026/loc/sydney/161130" target="_blank" rel="noopener">NeurIPS 2026 Workshop</a>).</strong> Built a toolkit that benchmarks deep learning models on TCR-pMHC complex prediction and used it to evaluate 87 complexes released after the AlphaFold3 training cutoff.
           <ul>
             <li>Designed <em>PDBFrame</em>, a pandas-based Python object for efficient protein structure management and manipulation.</li>
             <li>Automated chain type detection, gene/allele identification, and residue matching with truncation and missing-residue handling.</li>
@@ -145,7 +146,6 @@
       <ul class="bullets">
         <li><strong>ML models for materials prediction.</strong> Improved the accuracy of 3D image-based deep learning models more than 7-fold (MAE 46 meV/atom). The result is the most accurate image-based model for the formation energy of crystalline materials.</li>
         <li><strong>Python toolkit for materials analysis.</strong> Developed and released a toolkit that uses 3D CNNs to analyze sparse point clouds and voxel images of crystals. Introduced a new model for the synthesizability of theoretical materials and applied it to battery electrode and thermoelectric materials (<a href="https://github.com/kadkhodaei-research-group/XIE-SPP" target="_blank" rel="noopener">GitHub</a>).</li>
-        <li><strong>ML for superhard materials.</strong> Led the machine learning side of interdisciplinary collaborations predicting the properties and synthesis likelihood of next-generation superhard functional materials.</li>
         <li><strong>Ab initio simulations (VASP).</strong> Studied how anharmonic phonons affect diffusion in bcc metals, using temperature-dependent DFT and transition state theory. The simulated diffusion matched experimental data.</li>
         <li><strong>Climate statistics.</strong> Ran time-series and generalized extreme value (GEV) analyses of high-temperature extremes. Found that extreme-heat events double in frequency every 20 years and projected that they will occur yearly by 2100.</li>
         <li><strong>High-performance computing.</strong> Assembled a Condor HPC cluster from a dozen decommissioned nodes, which saved the lab a $20k HPC purchase.</li>
@@ -177,7 +177,82 @@
         <span class="date">2010 – 2015</span>
         <h3>B.Sc., Chemical Engineering</h3>
         <p>University of Tehran · Tehran, Iran</p>
-        <p class="muted">Senior project: Simulation and Optimization of Syngas and Fischer-Tropsch Processes in HYSYS (Advisor: Dr. Neda Gilani)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROJECTS ============================== -->
+<section class="section" id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <img class="project__img" src="assets/img/projects/xie-spp.png" alt="XIE-SPP turns a crystal structure into a 3D voxel image and predicts synthesizability and formation energy">
+      <div class="project__body">
+        <h3>XIE-SPP <span class="muted">· Crystal Image Encoder for Synthesis &amp; Property Prediction</span></h3>
+        <p>A Python package that turns crystal structures into 3D voxel images and uses deep convolutional networks to predict whether a theoretical material can be synthesized and its formation energy. It is the code behind two <em>Communications Materials</em> papers, on synthesizability (2021) and formation energy (2023), and runs from Python or the <code>xiespp</code> command line.</p>
+        <ul class="tags">
+          <li>3D CNN</li><li>Voxel images</li><li>TensorFlow</li><li>Materials discovery</li>
+        </ul>
+        <p class="pub__links"><a href="https://github.com/kadkhodaei-research-group/XIE-SPP" target="_blank" rel="noopener">Package</a><a href="https://www.nature.com/articles/s43246-021-00219-x" target="_blank" rel="noopener">Synthesizability paper</a><a href="https://www.nature.com/articles/s43246-023-00433-9" target="_blank" rel="noopener">Formation energy paper</a></p>
+      </div>
+    </article>
+
+    <article class="project">
+      <img class="project__img" src="assets/img/projects/tcrkit.png" alt="TCRkit stitches V, CDR3 and J gene calls into a full-length, IMGT-numbered TCR sequence">
+      <div class="project__body">
+        <h3>TCRkit <span class="muted">· T-cell receptor sequence toolkit</span></h3>
+        <p>A Python library and command line tool that builds full-length TCR sequences from V/J gene calls and a CDR3, annotates them in the IMGT numbering scheme, and standardizes messy TCR gene and HLA/MHC allele names. It puts Stitchr, ANARCI, tidytcells and mhcgnomes behind one consistent interface that works on a single sequence or a whole DataFrame.</p>
+        <ul class="tags">
+          <li>Immunology</li><li>TCR-pMHC</li><li>Python</li><li>CLI</li>
+        </ul>
+        <p class="pub__links"><a href="https://github.com/akdslab/tcrkit" target="_blank" rel="noopener">Package</a></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================== SKILLS ============================== -->
+<section class="section section--alt" id="skills">
+  <div class="container">
+    <h2>Expertise</h2>
+    <div class="cards">
+      <div class="card">
+        <h3><i class="fa-solid fa-brain"></i> Machine Learning</h3>
+        <p>PyTorch, TensorFlow, Keras, scikit-learn. Protein language models, generative diffusion, GNN, CNN, ResNet, U-Net, autoencoders, hypernetworks.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-dna"></i> Protein Structure &amp; Sequence</h3>
+        <p>AlphaFold2/3, Boltz-1/2, Protenix, ESMFold, TCRmodel2, RDKit, Schrödinger. TCR-pMHC structure prediction, benchmarking, and modeling.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-atom"></i> MD, DFT &amp; Monte Carlo</h3>
+        <p>LAMMPS (atomistic and coarse-grained), kinetic Monte Carlo, VASP, Gaussian, CALPHAD, DICTRA, ASE, pymatgen.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-cube"></i> Computer Vision</h3>
+        <p>3D image processing of crystal structures (voxel images, point clouds) for materials discovery.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-chart-line"></i> Data Science &amp; Statistics</h3>
+        <p>Statistical analysis, time series, extreme value (GEV) analysis, numerical methods, data cleaning, outlier detection. R, PySpark, JMP, Tableau.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-code"></i> Programming</h3>
+        <p>Python, C++, MATLAB, Java, Fortran, SQL, Bash, AWK.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-server"></i> Infrastructure &amp; HPC</h3>
+        <p>Git, Docker, Kubernetes, AWS, Google Cloud, Linux. Parallel CPU/GPU programming and algorithm optimization for HPC.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-gears"></i> Engineering Simulation</h3>
+        <p>Aspen HYSYS, OLGA, COMSOL, Ansys, OpenFOAM, CFD, FEA. AutoCAD for CAD and P&amp;ID.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-eye"></i> Visualization &amp; Tools</h3>
+        <p>VMD, OVITO, PyMOL, LaTeX, Adobe Illustrator.</p>
       </div>
     </div>
   </div>
@@ -194,6 +269,7 @@
         <p class="pub__title">Benchmarking TCR-pMHC Recognition Geometry</p>
         <p class="pub__authors">Hippe, K., Zhu, S., <b>Davariashtiyani, A.</b>, Lai, B., Ouyang-Zhang, J., Perera, J., Khan, A.A.</p>
         <p class="pub__venue"><em>NeurIPS 2026 Workshop AI4DD</em> (to appear) · 2026</p>
+        <p class="pub__links"><a href="https://neurips.cc/virtual/2026/loc/sydney/161130" target="_blank" rel="noopener">NeurIPS</a></p>
       </li>
       <li class="pub">
         <p class="pub__title">DecoderTCR: Compositional Pretraining and Entropy-Guided Decoding for TCR-pMHC Interactions</p>
@@ -274,53 +350,8 @@
   </div>
 </section>
 
-<!-- ============================== SKILLS ============================== -->
-<section class="section" id="skills">
-  <div class="container">
-    <h2>Expertise</h2>
-    <div class="cards">
-      <div class="card">
-        <h3><i class="fa-solid fa-brain"></i> Machine Learning</h3>
-        <p>PyTorch, TensorFlow, Keras, scikit-learn. Protein language models, generative diffusion, GNN, CNN, ResNet, U-Net, autoencoders, hypernetworks.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-dna"></i> Protein Structure &amp; Sequence</h3>
-        <p>AlphaFold2/3, Boltz-1/2, Protenix, ESMFold, TCRmodel2, RDKit, Schrödinger. TCR-pMHC structure prediction, benchmarking, and modeling.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-atom"></i> MD, DFT &amp; Monte Carlo</h3>
-        <p>LAMMPS (atomistic and coarse-grained), kinetic Monte Carlo, VASP, Gaussian, CALPHAD, DICTRA, ASE, pymatgen.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-cube"></i> Computer Vision</h3>
-        <p>3D image processing of crystal structures (voxel images, point clouds) for materials discovery.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-chart-line"></i> Data Science &amp; Statistics</h3>
-        <p>Statistical analysis, time series, extreme value (GEV) analysis, numerical methods, data cleaning, outlier detection. R, PySpark, JMP, Tableau.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-code"></i> Programming</h3>
-        <p>Python, C++, MATLAB, Java, Fortran, SQL, Bash, AWK.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-server"></i> Infrastructure &amp; HPC</h3>
-        <p>Git, Docker, Kubernetes, AWS, Google Cloud, Linux. Parallel CPU/GPU programming and algorithm optimization for HPC.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-gears"></i> Engineering Simulation</h3>
-        <p>Aspen HYSYS, OLGA, COMSOL, Ansys, OpenFOAM, CFD, FEA. AutoCAD for CAD and P&amp;ID.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-eye"></i> Visualization &amp; Tools</h3>
-        <p>VMD, OVITO, PyMOL, LaTeX, Adobe Illustrator.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ============================== TEACHING ASSISTANT / HONORS / COURSEWORK ============================== -->
-<section class="section section--alt" id="more">
+<section class="section" id="more">
   <div class="container">
     <div class="two-col">
       <div>
